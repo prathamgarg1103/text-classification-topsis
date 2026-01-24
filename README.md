@@ -154,6 +154,7 @@ This will create comprehensive visualizations in the `results/` directory.
 - **XLNet**: Yang et al. (2019) - [arXiv:1906.08237](https://arxiv.org/abs/1906.08237)
 - **DeBERTa**: He et al. (2020) - [arXiv:2006.03654](https://arxiv.org/abs/2006.03654)
 
-## 👨‍💻 Author
+##  Author
 
 prathamgarg1103
+

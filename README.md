@@ -1,14 +1,14 @@
 # TOPSIS Analysis for Text Classification Models
 
-## 📋 Overview
+##  Overview
 
 This project implements **TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution)** to evaluate and rank popular pre-trained models for text classification tasks. TOPSIS is a multi-criteria decision analysis method that helps identify the best alternative among a set of options.
 
-## 🎯 Objective
+##  Objective
 
 Apply TOPSIS methodology to determine the optimal pre-trained model for text classification based on multiple performance criteria.
 
-## 📊 Models Evaluated
+##  Models Evaluated
 
 The following state-of-the-art pre-trained models were evaluated:
 
@@ -19,7 +19,7 @@ The following state-of-the-art pre-trained models were evaluated:
 5. **XLNet-base** (xlnet-base-cased)
 6. **DeBERTa-base** (deberta-base)
 
-## 🔍 Evaluation Criteria
+##  Evaluation Criteria
 
 Models are evaluated based on five key criteria:
 
@@ -35,7 +35,7 @@ Models are evaluated based on five key criteria:
 > - **Benefit criteria** (↑): Higher values are better
 > - **Cost criteria** (↓): Lower values are better
 
-## 📈 Performance Data
+##  Performance Data
 
 | Model | Accuracy (%) | F1-Score (%) | Inference Time (ms) | Model Size (MB) | Training Data (GB) |
 |-------|--------------|--------------|---------------------|----------------|-------------------|
@@ -46,7 +46,7 @@ Models are evaluated based on five key criteria:
 | XLNet-base | 93.5 | 92.8 | 62.1 | 535 | 126 |
 | DeBERTa-base | 94.1 | 93.6 | 52.3 | 520 | 160 |
 
-## 🏆 TOPSIS Results
+##  TOPSIS Results
 
 ### Final Rankings
 
@@ -54,22 +54,22 @@ The TOPSIS analysis produced the following rankings:
 
 | Rank | Model | TOPSIS Score | Key Strengths |
 |------|-------|--------------|---------------|
-| 🥇 1 | **DeBERTa-base** | 0.7234 | Highest accuracy & F1-score, large training data |
-| 🥈 2 | **RoBERTa-base** | 0.6891 | Excellent performance, extensive pre-training |
-| 🥉 3 | **XLNet-base** | 0.5842 | Strong accuracy, good training data |
+|  1 | **DeBERTa-base** | 0.7234 | Highest accuracy & F1-score, large training data |
+|  2 | **RoBERTa-base** | 0.6891 | Excellent performance, extensive pre-training |
+|  3 | **XLNet-base** | 0.5842 | Strong accuracy, good training data |
 | 4 | **BERT-base** | 0.4756 | Balanced performance across metrics |
 | 5 | **DistilBERT** | 0.4523 | Fastest inference, smallest size |
 | 6 | **ALBERT-base** | 0.2987 | Extremely compact model |
 
 ### Visualization: TOPSIS Scores
 
-![TOPSIS Score Comparison](results/topsis_scores.png)
+[TOPSIS Score Comparison](results/topsis_scores.png)
 
 ### Visualization: Final Ranking
 
-![Final Ranking](results/final_ranking.png)
+[Final Ranking](results/final_ranking.png)
 
-## 🔬 TOPSIS Methodology
+##  TOPSIS Methodology
 
 The TOPSIS algorithm follows these steps:
 
@@ -88,7 +88,7 @@ The TOPSIS algorithm follows these steps:
 
 ![Heatmap of Normalized Matrix](results/heatmap_normalized.png)
 
-## 📊 Additional Visualizations
+##  Additional Visualizations
 
 ### Criteria Comparison
 
@@ -102,7 +102,7 @@ The TOPSIS algorithm follows these steps:
 
 ![Performance Overview](results/performance_overview.png)
 
-## 💡 Recommendation
+##  Recommendation
 
 > [!IMPORTANT]
 > **Recommended Model: DeBERTa-base**
@@ -117,7 +117,7 @@ The TOPSIS algorithm follows these steps:
 > - **For speed-critical applications**: DistilBERT (fastest inference at 28.5ms)
 > - **For resource-constrained environments**: ALBERT-base (smallest at 44MB)
 
-## 🚀 Usage
+##  Usage
 
 ### Installation
 
@@ -144,26 +144,7 @@ python visualizations.py
 
 This will create comprehensive visualizations in the `results/` directory.
 
-## 📁 Project Structure
-
-```
-assignment2/
-├── text_classification_topsis.py  # Main TOPSIS implementation
-├── visualizations.py              # Visualization generator
-├── requirements.txt               # Python dependencies
-├── README.md                      # This file
-└── results/                       # Generated outputs
-    ├── detailed_results.csv       # Complete results with all metrics
-    ├── topsis_breakdown.csv       # TOPSIS calculation details
-    ├── topsis_scores.png          # Score comparison chart
-    ├── criteria_comparison.png    # Individual criteria charts
-    ├── radar_chart.png            # Multi-dimensional comparison
-    ├── heatmap_normalized.png     # Normalized matrix heatmap
-    ├── final_ranking.png          # Final ranking visualization
-    └── performance_overview.png   # Comprehensive overview
-```
-
-## 📚 References
+##  References
 
 - **TOPSIS Method**: Hwang, C.L.; Yoon, K. (1981). "Multiple Attribute Decision Making: Methods and Applications"
 - **BERT**: Devlin et al. (2019) - [arXiv:1810.04805](https://arxiv.org/abs/1810.04805)
@@ -175,12 +156,4 @@ assignment2/
 
 ## 👨‍💻 Author
 
-Created as part of Assignment 2 - Text Classification Model Selection using TOPSIS
-
-## 📄 License
-
-This project is for educational purposes.
-
----
-
-**Note**: Performance metrics are based on typical benchmark results and may vary depending on specific datasets and implementation details.
+prathamgarg1103

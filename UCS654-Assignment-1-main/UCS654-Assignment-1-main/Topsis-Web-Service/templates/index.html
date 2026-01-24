@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TOPSIS Web Service</title>
+    <style>
+        body { font-family: sans-serif; padding: 40px; background-color: #f4f4f4; }
+        .container { background: white; padding: 30px; border-radius: 8px; max-width: 500px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input[type="text"], input[type="email"], input[type="file"] { width: 100%; margin-bottom: 15px; padding: 10px; box-sizing: border-box; }
+        button { background-color: #ff9800; color: white; padding: 10px 20px; border: none; cursor: pointer; width: 100%; font-size: 16px; }
+        button:hover { background-color: #e68900; }
+        h2 { text-align: center; color: #333; }
+        .error { color: red; font-size: 0.9em; }
+        .success { color: green; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>TOPSIS Web Service</h2>
+    
+    {% if message %}
+        <p class="{{ status }}">{{ message }}</p>
+    {% endif %}
+
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label>Input File (.csv)</label>
+        <input type="file" name="file" required>
+
+        <label>Weights (comma separated, e.g., 1,1,1)</label>
+        <input type="text" name="weights" placeholder="1,1,1,1" required>
+
+        <label>Impacts (comma separated, e.g., +,+,-)</label>
+        <input type="text" name="impacts" placeholder="+,+,-,+" required>
+
+        <label>Email ID</label>
+        <input type="email" name="email" placeholder="receiver@example.com" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

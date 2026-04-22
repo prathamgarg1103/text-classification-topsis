@@ -1,0 +1,110 @@
+[
+  {
+    "lambda": 0.0001,
+    "final_soft_accuracy": 48.2,
+    "final_pruned_accuracy": 48.2,
+    "final_sparsity_percent": 0.0,
+    "total_prunable_weights": 3803648,
+    "active_prunable_weights": 3803648,
+    "elapsed_seconds": 301.931782245636,
+    "history": {
+      "classification_loss": [
+        1.8350051412801913,
+        1.6763916125382914,
+        1.5860933416029985
+      ],
+      "total_loss": [
+        169.01956051877698,
+        168.56629487254736,
+        168.4753696607507
+      ],
+      "sparsity_loss": [
+        1671845.5984654732,
+        1668899.0725703326,
+        1668892.8014705882
+      ],
+      "soft_test_accuracy": [
+        42.66,
+        44.98,
+        48.2
+      ],
+      "sparsity_percent": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "lambda": 0.02,
+    "final_soft_accuracy": 46.05,
+    "final_pruned_accuracy": 46.05,
+    "final_sparsity_percent": 0.0,
+    "total_prunable_weights": 3803648,
+    "active_prunable_weights": 3803648,
+    "elapsed_seconds": 291.65503191947937,
+    "history": {
+      "classification_loss": [
+        2.00216133484755,
+        1.835440970747672,
+        1.6995325676925348
+      ],
+      "total_loss": [
+        8091.084209471407,
+        1608.0129703609534,
+        1521.1333154546635
+      ],
+      "sparsity_loss": [
+        404454.1103940217,
+        80308.87821691176,
+        75971.69067695012
+      ],
+      "soft_test_accuracy": [
+        38.54,
+        42.35,
+        46.05
+      ],
+      "sparsity_percent": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "lambda": 0.05,
+    "final_soft_accuracy": 42.67,
+    "final_pruned_accuracy": 10.0,
+    "final_sparsity_percent": 99.95898604393005,
+    "total_prunable_weights": 3803648,
+    "active_prunable_weights": 1560,
+    "elapsed_seconds": 299.12189412117004,
+    "history": {
+      "classification_loss": [
+        2.057846078787313,
+        1.9778145502900224,
+        1.8193976196181743
+      ],
+      "total_loss": [
+        18266.78838003017,
+        1919.1409837181307,
+        1799.595665036565
+      ],
+      "sparsity_loss": [
+        365294.6040601023,
+        38343.26281769501,
+        35955.52480618606
+      ],
+      "soft_test_accuracy": [
+        35.15,
+        40.01,
+        42.67
+      ],
+      "sparsity_percent": [
+        0.0,
+        99.95706677436829,
+        99.95898604393005
+      ]
+    }
+  }
+]
